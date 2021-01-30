@@ -43,7 +43,7 @@ Searches for doujin data according to the options passed. The options with brack
 
 ## Example
 ### Main
-```
+```js
 const nhentai = require('nhentai-js')
 (async () => {
     if(nhentai.exists('147476')) { // checks if doujin exists
@@ -81,7 +81,7 @@ const nhentai = require('nhentai-js')
 ```
 
 ### Gets a doujin's data
-```
+```js
 const nhentai = require('nhentai-js')
  
 async function getDoujin(id){
@@ -96,7 +96,7 @@ async function getDoujin(id){
 getDoujin('148936') // Object {...}
 ```
 ### Check if a doujin exists
-```
+```js
 const nhentai = require('nhentai-js')
  
 async function doujinExists(id){
@@ -108,7 +108,7 @@ console.log(doujinExists('147476')) // true
 ```
 
 ### Get doujins from homepage
-```
+```js
 (async () => {
     console.log(await nhentai.getHomepage(1))
 })()
@@ -131,7 +131,7 @@ console.log(doujinExists('147476')) // true
 ```
 
 ### Search doujins by tags, parodies, etc...
-```
+```js
 (async () => {
     console.log(await nhentai.search('stockings'))
 })()
