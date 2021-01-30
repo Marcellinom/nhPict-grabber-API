@@ -1,15 +1,5 @@
 # Node.JS implementation of nhentai.net's API.
 
-[![npm version](https://img.shields.io/npm/v/nhentai-api?style=for-the-badge)](https://www.npmjs.com/package/nhentai-api)![node version](https://img.shields.io/node/v/nhentai-api?style=for-the-badge)
-
-Node.JS module for handling nhentai.net API.
-
-Please refer the docs of source code to see main features, such as:
-* Classes instances for every type of data from API.
-* Return URLs for binary data (images).
-* Easy proxy support by using custom Agent (like [this one](https://www.npmjs.com/package/https-proxy-agent)).
-
-
 ## Install
 
 Install via npm:
