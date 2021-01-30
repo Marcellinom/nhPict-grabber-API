@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "express": "^4.17.1",
+    "nhentai-js": "^4.0.0"
+  },
+  "name": "nh-api-web",
+  "version": "1.0.0",
+  "description": "fetch nhentai data using API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "API",
+    "data",
+    "fetching"
+  ],
+  "author": "Marcellino",
+  "license": "MIT"
+}
