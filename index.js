@@ -16,5 +16,8 @@ app.listen(port, () => { console.log(`app listening at http://localhost:${port}`
             }
         }getDoujin(req.params.code)
     })
+    app.get('/', (req, res) => {
+        res.send('.com/(nhentai code)')
+    })
 })
     
