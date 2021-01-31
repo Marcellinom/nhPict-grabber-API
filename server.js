@@ -9,15 +9,15 @@ app.listen(port, () => { console.log(`app listening at http://localhost:${port}`
         async function getDoujin(id){
             try{ // try/catch is the equivalent of Promise.catch() in async/await
                 const val = await nhentai.getDoujin(id)
-               res.send(val)
+                res.send(val)
                 // console.log(val);
             }catch(err){
-                console.error(err);
+                //error, so data['status'] = 404
             }
         }getDoujin(req.params.code)
     })
     app.get('/', (req, res) => {
-        res.send('.com/(nhentai code)')
+        res.send('to use: com/(nhentai code)')
     })
 })
     
