@@ -12,7 +12,7 @@ app.listen(port, () => { console.log(`app listening at http://localhost:${port}`
                 res.send(val)
                 // console.log(val);
             }catch(err){
-                //error, so data['status'] = 404
+                res.send(err)
             }
         }getDoujin(req.params.code)
     })
