@@ -5,15 +5,6 @@ const fs = require('fs');
 const fetch = require('node-fetch');
 const app = express();
 
-var cloudinary = require('cloudinary').v2;
-let port = process.env.PORT || 3000 
-
-cloudinary.config({
-    cloud_name:'dodfnzma6',
-    api_key:'155611464359442',
-    api_secret:'fD8fDl3REM408_fDT5gUlk39lRQ',
-    api_environment_variable:'CLOUDINARY_URL=cloudinary://155611464359442:fD8fDl3REM408_fDT5gUlk39lRQ@dodfnzma6'
-})
 
 app.listen(port, () => { console.log(`app listening at http://localhost:${port}`)
 app.get('/popular/', (req, res) => {
